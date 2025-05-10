@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     
     <style>
+        .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+        --bs-navbar-color:}
         #logo1{
             width: 200px;
+            margin: 0;
 
         }
-        #search{
-            
-            margin-left: 20px;
-            position: relative;
-        }
+        
         .nav-link{
             color: white;
             font-weight: bold;
@@ -33,21 +34,126 @@
         .bg-dark {
         background-color: rgb(0 0 0) !important;
         }
+    #navbarNav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .person{
+        color: white;
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+    .person:hover{
+        color: red;
+    }
+    .shopping{
+        color: white;
+        font-size: 28px;
+        padding-bottom: 10px;
+        z-index: -1; 
+    }
+    .shopping:hover{
+        color: red;
+
+    }
+    .shop-count{
+        position: absolute;
+        background-color: red;
+        color: white;
+        margin-left: -12px;
+        margin-bottom: -15px;
+        
+        border-radius: 50%;
+        font-size: 13px;
+        
+        padding: 0px 5px;
+    }
+    
+    
+ li > a {
+ 
+  position: relative;
+}
+.nav-link:hover{
+    color: white;
+}
+
+li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0;
+  top: 15px;
+  background: transparent;
+  transition: all 0.5s;
+  
+}
+
+li > a:hover::after, li > a.active-nav::after {
+  width: 100%;
+  background: rgb(250, 250, 253);
+}
+ul li{
+    position: relative;
+}
+ul ul{
+    position: absolute;
+    background-color: white;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    display: none;
+    margin-top: 2px;
+
+
+}
+ul ul li{
+    margin: 12px 0px ;
+}
+ul ul li a:hover{
+    color: red; 
+    
+}
+ul ul li a{
+    text-decoration: none;
+    color: black;
+    padding-top: 30px;
+    
+}
+ul li:hover ul{
+    display: block;
+}
+#search-box{
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    position: relative;
+}
+#search{
+    position: absolute;
+        color: white;
+        margin-bottom: -20px;
+    }
+        
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark" id="nav1">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="image/Richma.png" alt="img" id="logo1"></a>
+          <a class="navbar-brand" href="#"><img src="image/Richma.png" class="img-fluid" alt="img" id="logo1"></a>
           
           <div class="search-wrapper">
+            <i class="bi bi-search"></i>
             <div class="search-box">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" class="form-control search-input" placeholder="Type to search...">
+                <i class="fas fa-search search-icon" id="search"></i>
+                <input type="text" class="form-control search-input" placeholder="Type to search..." id="search-box">
             </div>
         </div>
+        
     </div>
+    
 </nav>
 
 
@@ -67,7 +173,11 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">SHIRT</a>
-              </li>
+                <ul>
+                    <li><a href="#">Formal shirt</a></li>
+                    <li><a href="#">Casual shirt</a></li>
+                </ul>
+            </li>
               <li class="nav-item">
                   <a class="nav-link" href="#">T-SHIRT</a>
                 </li>
@@ -76,58 +186,67 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">PANT</a>
+                  <ul>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">Formal pant</a></li>
+                    <li><a href="#">Chinos</a></li>
+                    <li><a href="#">JOGGERS</a></li>
+                    <li><a href="#">Relaxed Trouser</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">ACCESSORIES</a>
+                  <ul>
+                    <li><a href="#">Belt</a></li>
+                    <li><a href="#">Wallet</a></li>
+                    <li><a href="#">INNER WEAR</a></li>
+                    <li><a href="#">Cap</a></li>
+                    <li><a href="#">Perfume</a></li>
+                    <li><a href="#">Socks</a></li>
+                    <li><a href="#">Tie</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">ETHNIC WEAR</a>
                 </li>
               
             </ul>
-      </div>
+            <div>
+                <a href="#" class="person"><i class="bi bi-person"></i></a>
+                <a href="#" class="shopping"><i class="bi bi-bag"></i>
+                <span class="shop-count">0</span>
+                </a>
+            </div>
+        </div>
+       
+            
     </div>
   </nav>
-<!-- <br><br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8">
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">SUMMER COLLECTION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">BLZER</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SHIRT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">T-SHIRT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">POLO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">PANT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ACCESSORIES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ETHNIC WEAR</a>
-              </li>
-            
-          </ul>
-        </div> -->
 
-
-
-
-     
-        
-        
-      x
+    <!-- Slider -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="image/Web-Banner_Richman-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="image/Richman-Web-Banner.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="image/Richman-web-banner-4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
       <!-- bootstrap-js-link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
