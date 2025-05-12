@@ -311,6 +311,26 @@ h6{
     font-size: larger;
     
   }
+  .media{
+    float: left;
+  }
+
+  #mid{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  #mid i{
+    font-size: x-large;
+    padding-bottom: 5px;
+    color: white;
+  }
+  .foot a{
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 10px;
+  }
   
  
  
