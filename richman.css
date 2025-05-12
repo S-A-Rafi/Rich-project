@@ -9,8 +9,8 @@
     }
     
     .nav-link{
-        color: white;
-        font-weight: bold;
+        color: white !important;
+        font-weight: bold !important;
     
     }
     .nav-item{
@@ -89,11 +89,12 @@ position: absolute;
 background-color: white;
 left: 0;
 width: 200px;
+border-radius: 7px;
 list-style: none;
 display: none;
 margin-top: 2px;
-
-
+z-index: 9999;
+transition: all 5s;
 }
 ul ul li{
 margin: 12px 0px ;
