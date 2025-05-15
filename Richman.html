@@ -29,10 +29,10 @@
           <a class="navbar-brand" href="#"><img src="image/Richma.png" class="img-fluid" alt="img" id="logo1"></a>
           
           <div class="search-wrapper">
-            <i class="bi bi-search"></i>
-            <div class="search-box">
-                <i class="fas fa-search search-icon" id="search"></i>
-                <input type="text" class="form-control search-input" placeholder="Type to search..." id="search-box">
+            
+            <div class="search-box" id="sear">
+                <input type="text" class="form-control search-input" placeholder="       Type to search..." id="search-box">
+                <button><i class="bi bi-search"></i></button>
             </div>
         </div>
         
@@ -41,8 +41,8 @@
 </nav>
 
 
-<nav class="navbar-dark navbar-expand-lg bg-dark">
-    <div class="container-fluid">
+<nav class="navbar-dark navbar-expand-lg bg-dark" id="nav1">
+    <div class="container-fluid" >
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,26 +50,26 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">SUMMER COLLECTION</a>
+                <a class="nav-link" href="https://richmanbd.com/product-category/summer-collection/" id="summer">SUMMER COLLECTION<span class="tool1">Summer Collection</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">BLZER</a>
+                <a class="nav-link" href="https://richmanbd.com/product-category/winter-collection/blazer/" id="blazer">BLAZER<span class="tool2">Blazer</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SHIRT</a>
+                <a class="nav-link" href="https://richmanbd.com/product-category/mens-shirt/" id="shirt">SHIRT<span class="tool3">Shirt</span></a>
                 <ul>
                     <li><a href="#">Formal shirt</a></li>
                     <li><a href="#">Casual shirt</a></li>
                 </ul>
             </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">T-SHIRT</a>
+                  <a class="nav-link" href="https://richmanbd.com/product-category/mens-t-shirt/" id="tshirt">T-SHIRT<span class="tool4">T-Shirt</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">POLO</a>
+                  <a class="nav-link" href="https://richmanbd.com/product-category/mens-polo/" id="polo">POLO<span class="tool5">Polo</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PANT</a>
+                  <a class="nav-link" href="https://richmanbd.com/product-category/mens-pant/" id="pant">PANT<span class="tool6">Pant</span></a>
                   <ul>
                     <li><a href="#">Denim</a></li>
                     <li><a href="#">Formal pant</a></li>
@@ -79,7 +79,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ACCESSORIES</a>
+                  <a class="nav-link" href="https://richmanbd.com/product-category/mens-accessories/" id="acces">ACCESSORIES<span class="tool7">Accessories</span></a>
                   <ul>
                     <li><a href="#">Belt</a></li>
                     <li><a href="#">Wallet</a></li>
@@ -93,7 +93,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ETHNIC WEAR</a>
+                  <a class="nav-link" href="https://lubnanbd.com/product-category/new-arrivals/" id="ethnic">ETHNIC WEAR<span class="tool8">Ethnic wear</span></a>
                 </li>
               
             </ul>
@@ -110,24 +110,24 @@
   </nav>
 
     <!-- Slider -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1800">
             <img src="image/Richman-web-banner-4.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="1800">
+          <div class="carousel-item" data-bs-interval="1900">
             <img src="image/Richman-Web-Banner.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="1800">
+          <div class="carousel-item" data-bs-interval="1900">
             <img src="image/Web-Banner_Richman-1.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="1800">
+          <div class="carousel-item" data-bs-interval="1900">
             <img src="image/Richman-web-banner-2.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="1800">
+          <div class="carousel-item" data-bs-interval="1900">
             <img src="image/Richman-winter-web-banner-2023-8.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="1800">
+          <div class="carousel-item" data-bs-interval="1900">
             <img src="image/Richman-web-banner-3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
@@ -145,21 +145,21 @@
        <div class="container">
         <div class="row justify-content-around mt-5 mb-5">
           <div class="col-md-4" id="show">
-            <img src="image/d11.jpg" alt="">
+            <a href="https://richmanbd.com/product-category/mens-polo/"><img src="image/d11.jpg" alt=""></a>
             <div class="cap">
               <p style="margin-left: 40px;">SHOP NOW</p>
               <p style="font-size: 35px;">Polo Shirts</p>
             </div>
           </div>
           <div class="col-md-4" id="show">
-            <img src="image/d12.jpg" alt="">
+            <a href="https://lubnanbd.com/product-category/lubnan-mens-panjabi/"><img src="image/d12.jpg" alt=""></a>
             <div class="cap">
               <p style="margin-left: 40px;">SHOP NOW</p>
               <p style="font-size: 35px;">Polo Shirts</p>
             </div>
           </div>
           <div class="col-md-4" id="show">
-            <img src="image/d13.jpg" alt="">
+            <a href="https://richmanbd.com/product-category/mens-shirt/"><img src="image/d13.jpg" alt=""></a>
             <div class="cap">
               <p style="margin-left: 40px;">SHOP NOW</p>
               <p style="font-size: 35px;">Polo Shirts</p>
@@ -360,6 +360,19 @@
                 <a href="#">Billing & Payments</a><br> 
                 <a href="#">DELIVERY & EXCHANGE POLICY</a> 
               </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright" style="text-align: center;">© RICHMAN BD 2020 | All rights reserved. | Made with <img decoding="async" class="emoji" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f9e1.svg" alt="????"> by <strong><a style="color: #ffcc00;" title="TechAByte Solutions" href="https://techabyte.xyz/" target="_blank" rel="noopener">TechAByte Solutions.</a></strong></div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" id="pay">
+              <img src="image/foot.webp" alt="f" class="img-fluid">
             </div>
           </div>
         </div>

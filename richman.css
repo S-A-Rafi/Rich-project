@@ -18,8 +18,8 @@
         padding-right: 10px;
         padding-top: 0;
     }
-    .bg-dark {
-    background-color: rgb(0 0 0) !important;
+    #nav1{
+    background-color: black !important;
     }
 #navbarNav{
     display: flex;
@@ -112,16 +112,165 @@ padding-top: 30px;
 ul li:hover ul{
 display: block;
 }
-#search-box{
+#sear input{
 border-radius: 20px;
 border: none;
 width: 250px;
 position: relative;
 }
-#search{
-position: absolute;
-    color: white;
-    margin-bottom: -20px;
+#sear button{
+    position: absolute;
+    margin-top: -35.5px;
+    margin-left: -2px;
+    z-index: 9999;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 22px;
+}
+
+/* tooltips */
+#summer{
+  position: relative;
+}
+.tool1{
+  width: 120px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -150px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+.tool2{
+  width: 70px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -80px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+.tool3{
+  width: 55px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -80px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+.tool4{
+  width: 60px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -80px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+.tool5{
+  width: 60px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -70px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+.tool6{
+  width:60px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -70px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+.tool7{
+  width: 80px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -110px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+.tool8{
+  width: 80px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 87%;
+  right: 80%;
+  margin-right: -110px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  visibility: hidden;
+  z-index: 99999;
+}
+#summer:hover .tool1{
+  visibility: visible;
+  
+}
+#blazer:hover .tool2{
+  visibility: visible;
+}
+#shirt:hover .tool3{
+  visibility: visible;
+}
+#tshirt:hover .tool4{
+  visibility: visible;
+}
+#polo:hover .tool5{
+  visibility: visible;
+}
+#pant:hover .tool6{
+  visibility: visible;
+}
+#acces:hover .tool7{
+  visibility: visible;
+}
+#ethnic:hover .tool8{
+  visibility: visible;
 }
 /* show */
 #show{
@@ -266,6 +415,7 @@ h6{
     color: white;
     margin-left: 70px;
     
+    
   }
   #history img{
     width: 100%;
@@ -316,22 +466,43 @@ h6{
   }
 
   #mid{
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     background-color: black;
+    border: none;
+    transition: all 0.8s;
   }
   #mid i{
     font-size: x-large;
     padding-bottom: 5px;
     color: white;
   }
+  #mid:hover{
+    background-color: red;
+  }
   .foot a{
     text-decoration: none;
     color: gray;
+    display: inline-block;
     margin-bottom: 10px;
+    margin-left: 5px;
   }
-  
- 
+  .foot a:hover{
+    color: red;
+  }
+  .copyright img{
+    width: 15px;
+    height: 15px;
+  }
+  #pay{
+    overflow: hidden;
+  }
+  #pay img{
+    transition: all 5s;
+  }
+  #pay:hover img{
+    transform: scale(1.3);
+  }
  
   
