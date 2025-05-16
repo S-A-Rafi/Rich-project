@@ -505,4 +505,62 @@ h6{
     transform: scale(1.3);
   }
  
+
+  /* Summer Collection */
   
+  h3, .tit{
+    padding: 5px;
+  }
+  .tit{
+    color: gray;
+  }
+  .im{
+    position: relative;
+  }
+  .sum-bt{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 40px;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  #card11:hover .sum-bt{
+    visibility: visible;
+    transform: scale(1.1);
+  }
+  .sum-btn{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: none;
+    background-color: white;
+    font-size: large;
+    box-shadow: 5px 5px 10px 5px rgba(188, 188, 188, 0.233);
+    
+  }
+  .new{
+    position: absolute;
+    background-color: rgba(7, 226, 7, 0.621);
+    color: white;
+    margin-left: -185px;
+    width: 50px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 150px;
+  }
+  .sum-btn:hover{
+    background-color: rgb(250, 62, 62);
+    color: white;
+  }
+  .pt:hover{
+    color: red;
+  }
+  .pt{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-size: 15px;
+    
+  }
+ 
